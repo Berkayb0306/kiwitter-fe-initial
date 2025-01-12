@@ -86,7 +86,7 @@ export default function Signup() {
             type="submit"
             className="h-12 text-center block w-full rounded-lg bg-lime-700 text-white font-bold "
           >
-            GİRİŞ
+            KAYIT OL
           </button>
         </div>
       </form>
