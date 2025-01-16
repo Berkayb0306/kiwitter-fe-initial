@@ -33,9 +33,7 @@ export default function PageLayout({ children }) {
         </header>
       </div>
       <div className="pt-6 pb-12 px-4">
-        <main className="max-w-xl mx-auto bg-white min-h-96 rounded-xl shadow-xl">
-          {children}
-        </main>
+        <main className="max-w-xl mx-auto">{children}</main>
       </div>
     </div>
   );

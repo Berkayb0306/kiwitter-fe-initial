@@ -1,12 +1,12 @@
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
-import PageLayout from "./PageLayout";
 import Login from "./Login";
 import Signup from "./Signup";
 import PrivateRoute from "./PrivateRoute";
 import { UserContextDepo } from "./UserContextDepo";
 import MainPage from "./MainPage";
 import UserTwits from "./UserTwits";
+import TwitDetail from "./TwitDetail";
 
 /*
   - UserContext: oluştur, kullanıcıyı kaydet, localStorage bağlantısı
@@ -37,7 +37,7 @@ function App() {
           </Route>
 
           <PrivateRoute path="/detail/:twitId">
-            <PageLayout>Twit detail</PageLayout>
+            <TwitDetail />
           </PrivateRoute>
         </Switch>
       </UserContextDepo>
