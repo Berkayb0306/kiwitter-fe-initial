@@ -14,7 +14,7 @@ export default function PageLayout({ children }) {
   return (
     <div className="relative">
       <div className="sticky top-0 bg-white shadow-md">
-        <header className="container mx-auto p-6 flex items-center justify-between">
+        <header className=" p-6 flex items-center justify-between">
           <h1 className="text-lg font-bold text-lime-800">KIWITTER</h1>
 
           {user ? (
@@ -32,8 +32,8 @@ export default function PageLayout({ children }) {
           )}
         </header>
       </div>
-      <div className="pt-6 pb-12">
-        <main className="container mx-auto bg-white min-h-96 rounded-xl shadow-xl p-6">
+      <div className="pt-6 pb-12 px-4">
+        <main className="max-w-xl mx-auto bg-white min-h-96 rounded-xl shadow-xl">
           {children}
         </main>
       </div>

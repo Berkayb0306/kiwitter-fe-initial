@@ -16,7 +16,7 @@ export default function Signup() {
     console.log(data, "---");
     axios({
       method: "post",
-      url: "http://localhost:5179/users",
+      url: "https://kiwitter-node-77f5acb427c1.herokuapp.com/users/signup",
       data: data,
     })
       .then((response) => {
